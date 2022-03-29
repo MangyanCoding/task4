@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>WST | Task 4</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		.container{
+			width:  100vw;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.cont{
+			width: 300px;
+			height: 300px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border: 1px solid black;
+		}
+		input{
+			margin: 10px;
+		}
+
+		.button{
+			width: 150px;
+			padding: 5px 10px;
+		}
+		
+	</style>
+	<script type="text/javascript">
+		function add(){
+			var A = parseInt(document.getElementById('fno').value);
+			var B = parseInt(document.getElementById('sno').value);
+			var C = A + B;
+			document.getElementById('sumno').value = C;
+		}
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="cont">
+		<form name="example">
+			<h3>Add Two Numbers</h3>
+			<input type="text" name="fno" value="" id="fno"> 
+			<p>+</p>
+			<input type="text" name="sno" value="" id = "sno">
+			<p>=</p>
+			<input type="text" name="sumno" value="" id="sumno" disabled> <br>
+			<input type="button" class= "button" name="submit" value="Submit" onClick="add()">
+		</form>
+		</div>
+	</div>
+</body>
+</html>
